@@ -1,0 +1,637 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <style>
+    #banner {
+      padding-top: 1px;
+      background: url('img/fa2.jpg') center center;
+      background-attachment: fixed;
+      background-size: unset;
+     
+      padding: 20em 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    #banner::after {
+      content: '';
+      background: rgba(77, 62, 194, 0.388);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    #banner h1 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="blue accent-4" style="position: fixed; z-index: 500;">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">My Portfolio</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="sass.html">Home</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+          </ul>
+        
+        </div>
+      </nav>
+  
+
+  <div id="banner" class="center-align white-text">
+    <div class="container">
+        <style>
+            .chip {
+              display: inline-block;
+              padding: 0 25px;
+              height: 50px;
+              font-size: 16px;
+              line-height: 50px;
+              border-radius: 25px;
+              background-color: #f1f1f1;
+            }
+            
+            .chip img {
+              float: left;
+              margin: 0 10px 0 -25px;
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <div class="chip">
+              <img src="img/fa3.jpg" alt="Person" width="96" height="96">
+              ABATAN Francois Adebayo
+            </div>
+    </div>
+  </div>
+  
+  <div class="progress">
+    <div class="indeterminate class= indigo accent-4"></div>
+</div>
+ 
+  <div id="project"style="text-align:center">
+    <div id="aboutitle"><i class="fas fa-book-reader"></div>
+    <div id="Pic">
+        <img src="assets/images/back.png" alt="" sizes="" srcset="">
+    </div>
+    <div id="content">
+       
+<h1>Projects</h1>
+  </main>
+  <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+    
+   
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/pro1.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/pro2.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/pro3.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/pro4.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  </style>
+  </head>
+  <body>
+   <hr>
+    <div id="about">
+      <div id="aboutitle"><i class="fas fa-book-reader"></i></div>
+      <div id="Pic">
+          <img src="assets/images/back.png" alt="" sizes="" srcset="">
+      </div>
+      <div id="content">
+          
+  <h1>About</h1>
+  
+  <div><center>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/fa4.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>ABATAN Francois</h1> 
+        <p>I am student in IRGIB Africa</p> 
+        <p>I am 20 years old and im in CIT 200 level and i love creating websites because it is a passion</p>
+      </div>
+    </div>
+  </div>
+</center></div>
+<p>
+<style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    </style>
+    <body>
+    
+  
+    
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/fa1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/f2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/f3.jpg" style="width:90%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/f4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/f3.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/f4.jpg" style="width:100%">
+      </div>
+    
+     
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img/f1.jpg" style="width:100%" onclick="currentSlide(1)" alt="i love food">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/f2.jpg" style="width:100%" onclick="currentSlide(2)" alt="girls are my hobby">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/f3.jpg" style="width:100%" onclick="currentSlide(3)" alt="i love computer">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/f4.jpg" style="width:100%" onclick="currentSlide(4)" alt="i love riding">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/f5.jpg" style="width:100%" onclick="currentSlide(4)" alt="i love my family">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/f6.jpg" style="width:100%" onclick="currentSlide(4)" alt="i love ">
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    </p>
+<hr>
+<h1>Skill</h1> 
+  <div>
+    <h5 class="center-align">Html,Css,Javascript,PHP,MySQL,Networking</h5>
+  </div>
+  <style>
+   
+    
+   
+    }
+    
+    .skills {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+    }
+    
+    .html {width: 100%; background-color: #4CAF50;}
+    .css {width: 100%; background-color: #2196F3;}
+    .js {width: 70%; background-color: #f44336;}
+    
+    
+    .php {width: 60%; background-color: #e511ec;}
+    </style>
+    </head>
+    <body>
+    
+    <h1>My Skills</h1>
+    
+    <p>HTML</p>
+    <div class="container">
+      <div class="skills html">90%</div>
+    </div>
+    
+    <p>CSS</p>
+    <div class="container">
+      <div class="skills css">80%</div>
+    </div>
+    
+    <p>JavaScript</p>
+    <div class="container">
+      <div class="skills js">65%</div>
+    </div>
+    
+    <p>PHP</p>
+    <div class="container">
+      <div class="skills php">60%</div>
+    </div>
+   
+  <h1>Contact</h1>
+  <div class="container">
+    <form action="action_page.php">
+  
+     
+  
+    </form>
+    
+  </div>
+  <hr>
+    <!-- CONTACT -->
+    <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container">
+             <div class="row">
+
+                  <div class="col-md-offset-1 col-md-10 col-sm-12">
+                       <form id="contact-form" role="form" action="" method="post">
+                            <div class="section-title">
+                              
+                            </div>
+
+                            <div class="col-md-4 col-sm-4">
+                                 <input type="text" class="form-control" placeholder="Full name" name="name" required="">
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                 <input type="email" class="form-control" placeholder="Email address" name="email" required="">
+                            </div>
+                            
+                            <div class="col-md-12 col-sm-12">
+                                 <textarea class="form-control" rows="8" placeholder="Your message" name="message" required=""></textarea>
+                                 <div class="col-md-4 col-sm-4">
+                                    <input type="submit" class="form-control" name="send message" value="Send Message">
+                               </div>
+                                </div>
+
+                       </form>
+                  </div>
+
+             </div>
+        </div>
+   </section>       
+   
+ 
+
+    <a href="index2.html" class="right aligh;right;color white-text"; >
+      </a>
+      
+    
+     
+     
+   
+      
+    
+      <footer class="page-footer   indigo accent-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <div class="container">
+                <form
+               
+             
+              
+       
+            </form>
+           
+            
+          </div>
+        </div>
+      </footer>
+    
+     
+     <hr>
+     
+     <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright Text / Designed by  Abatan Francois
+          
+          
+          
+  
+        </div>
+      </div>
+    </footer>
+    <script src="js/materialize.min.js"></script>
+  </body>
+     
+      <script src="js/materialize.min.js"></script>
+    
+                
+    </html>
+</html>
